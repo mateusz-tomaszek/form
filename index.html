@@ -1,57 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Mateusz Tomaszek</title>
-  <meta charset="utf-8">
-  <link rel="shortcut icon" href="other/img/logo.png" type="image/x-icon">
-  <link rel="icon" href="other/img/logo.png">
-  <meta name="description" content="biogram">
-  <meta name="keywords" content="mateusz tomaszek, fotografia, samochody, cars, photo">
-  <meta name="author" content="mateusz tomaszek">
-  <meta name="acopyright" content="mateusz tomaszek">
-  <meta name="robots" content="index">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="other/form.css">
+    <title>Mateusz Tomaszek</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="other/img/logo.png" type="image/x-icon">
+    <link rel="icon" href="other/img/logo.png">
+    <meta name="description" content="biogram">
+    <meta name="keywords" content="mateusz tomaszek, fotografia, samochody, cars, photo">
+    <meta name="author" content="mateusz tomaszek">
+    <meta name="acopyright" content="mateusz tomaszek">
+    <meta name="robots" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="form.css">
 </head>
-<body class="d-flex align-items-center">
-  <div class="container">
-    <div class="row justify-content-center" style="margin:20px;">
-      <div class="col-lg-6 col-md-8 login-box">
-        <div class="col-lg-12 login-title">
-            Send Message
-        </div>
-        <div class="col-lg-12 login-form">
-          <form action="https://formsubmit.co/arealny_plebejusz.0s@icloud.com" method="POST" autocomplete="on">
-            <div class="form-group">
-              <label class="form-control-label">Name</label>
-              <input name="name" type="text" class="form-control" id="username">
+<body>
+    <form action="">
+    <div class="background">
+        <div class="container">
+          <div class="screen">
+            <div class="screen-header">
+              <div class="screen-header-left">
+                <div class="screen-header-button close"></div>
+                <div class="screen-header-button maximize"></div>
+                <div class="screen-header-button minimize"></div>
+              </div>
+              <div class="screen-header-right">
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+              </div>
             </div>
-            <div class="form-group">
-              <label class="form-control-label">Email</label>
-              <input name="email" type="email" class="form-control" required="required" id="email">
-            </div>
-            <div class="form-group">
-              <label class="form-control-label">Message</label>
-              <input name="message" type="text" class="form-control" minlength="20" autocomplete="off" id="message" maxlength="150">
-            </div>
-
-                <div class="col-12 login-btm login-button justify-content-center d-flex">
-                  <button value="Submit" type="submit" class="btn btn-outline-primary" id="submit">Submit</button>
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <span>CONTACT</span>
+                 
                 </div>
-                <div class="col-12 login-btm login-button justify-content-center d-flex" style="margin-top: -30px !important;">
-                  <button value="Submit" type="button" class="btn btn-outline-primary" id="submit" onclick="window.location.href='https://mateusztomaszek.com.pl';">Anuluj</button>
+                <div class="app-contact">Write to me: </div>
+              </div>
+              
+              <div class="screen-body-item">
+                <div class="app-form">
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="NAME" autofocus>
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="EMAIL" type="email" required="required">
+                  </div>
+                  <div class="app-form-group message">
+                    <input class="app-form-control" placeholder="MESSAGE">
+                  </div>
+                  <div class="app-form-group buttons">
+                    <button class="app-form-button"  onclick="window.location.href='https://mateusztomaszek.com.pl';">CANCEL</button>
+                    <button class="app-form-button" type="submit">SEND</button>
+                
+                  </div>
                 </div>
+           
+              </div>
             </div>
-            </form>
           </div>
+          
         </div>
       </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-      </script>
+    </form>
 </body>
 </html>
