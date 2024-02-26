@@ -1,8 +1,30 @@
+/*BLOCK SCROLL*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #131313;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #404040;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #606060;
+}
 
 
-*
+body
 {
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 *, *:before, *:after {
@@ -248,6 +270,12 @@
   }
   
   @media screen and (max-width: 520px) {
+
+    body
+    {
+      overflow-y: scroll;
+    }
+
     .screen-body {
       flex-direction: column;
     }
