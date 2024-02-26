@@ -151,7 +151,6 @@
     border-bottom: 1px solid #666;
     color: #ddd;
     font-size: 14px;
-   /* text-transform: uppercase; */
     outline: none;
     transition: border-color .2s;
   }
@@ -171,7 +170,46 @@
     font-size: 14px;
     cursor: pointer;
     outline: none;
+    transition: 0.2s;
+    
   }
+
+
+  .app-form-button {
+    position: relative;
+    color: #ba1dea;
+    text-decoration: none;
+  }
+  
+  .app-form-button:hover {
+    transition: 0.2s;
+    color: #ba1dea;
+  }
+  
+  .app-form-button::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;;
+    background-color: #cbcbcb;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .app-form-button:hover::before {
+    transform: scaleX(1);
+  }
+
+
+
+
+
+
+
+
   
   .app-form-button:hover {
     color: #ea1dcb;
