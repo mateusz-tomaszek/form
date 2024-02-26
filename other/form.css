@@ -304,3 +304,13 @@
   }
 
 
+  input:-webkit-autofill {
+    background-color: #3e3e3e;
+    border: 0px;
+    border-bottom: 1px solid #666;
+  }
+  input:autofill {
+    background-color: #3e3e3e;
+    border: 0px;
+    border-bottom: 1px solid #666;
+  }
