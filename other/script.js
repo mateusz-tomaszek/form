@@ -26,7 +26,7 @@ function redirect() {
 
 function resetTimeout() {
     clearTimeout(timeout);
-    timeout = setTimeout(displayTimeoutMessage, 25000);
+    timeout = setTimeout(displayTimeoutMessage, 30000);
 }
 
 function displayTimeoutMessage() {
