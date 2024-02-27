@@ -26,7 +26,7 @@ function redirect() {
 
 function resetTimeout() {
     clearTimeout(timeout);
-    timeout = setTimeout(displayTimeoutMessage, 30000);
+    timeout = setTimeout(displayTimeoutMessage, 40000);
 }
 
 function displayTimeoutMessage() {
@@ -54,6 +54,7 @@ document.getElementById('cancelButton').addEventListener('click', function() {
     isRedirecting = false;
     document.getElementById('timeoutMessage').style.display = 'none';
     document.getElementById('time').style.display = 'none';
+
 });
 
 resetTimeout();
