@@ -383,7 +383,7 @@ body
 
   .time
   {
-    display: block; /**/
+    display: none; /**/
       background-color: rgba(0, 0, 0, 0.7);
       position: absolute;
       top: 0%;
@@ -394,7 +394,7 @@ body
   }
 
   #timeoutMessage {
-      display: block;  /**/
+      display: none;  /**/
       position: fixed;
       top: 50%;
       left: 50%;
