@@ -32,6 +32,8 @@ function resetTimeout() {
 function displayTimeoutMessage() {
     document.getElementById('timeoutMessage').style.display = 'block';
     document.getElementById('time').style.display = 'block';
+    var progressBar = document.getElementById('progress');
+    progressBar.style.display = 'inline';
     startCountdown();
 }
 
