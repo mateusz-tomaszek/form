@@ -1,5 +1,5 @@
 let countdownTimer;
-let secondsRemaining = 10;
+let secondsRemaining = 9;
 let isRedirecting = false;
 let timeout;
 
