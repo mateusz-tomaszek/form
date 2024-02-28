@@ -295,6 +295,8 @@ body
     .app-title:after {
       display: none;
     }
+
+
   }
   
   @media screen and (max-width: 600px) {
@@ -305,6 +307,14 @@ body
     .screen-body-item {
       padding: 0;
     }
+    #timeoutMessage {
+    
+      padding: 0px;
+      font-size: 130%;
+      border-radius: 20px;
+      width: 70%;
+    }
+    
   }
   
 
@@ -373,7 +383,7 @@ body
 
   .time
   {
-    display: none; /**/
+    display: block; /**/
       background-color: rgba(0, 0, 0, 0.7);
       position: absolute;
       top: 0%;
@@ -384,14 +394,14 @@ body
   }
 
   #timeoutMessage {
-      display: none;  /**/
+      display: block;  /**/
       position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: #2c2c2c;
       padding: 40px;
-      border: 2px solid #ffffff;
+      border: 2px solid #131313;
       z-index: 9999;
       text-align: center;
       color: white;
@@ -404,7 +414,7 @@ body
     margin-top: 20px;
     padding: 10px 20px 10px 20px;
     background-color: #2c2c2c;
-    border: 2px solid #ff0000;
+    border: 2px solid #0088ff;
     border-radius: 10px;
     color: white;
     scale: 100%;
@@ -414,8 +424,13 @@ body
   }
   #cancelButton:hover
   {
-    background-color: red;
+    background-color: #0088ff;
     scale: 120%;
     transition: 0.1s;
   }
 
+  #timeoutMessage img
+  {
+    margin-bottom: 10px;
+    filter: drop-shadow(8px 8px 12px #000000);
+  }
