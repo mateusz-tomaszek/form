@@ -20,7 +20,7 @@ function updateCountdown() {
 function redirect() {
     if (!isRedirecting) {
         isRedirecting = true;
-        window.location.href = 'https://mateusztomaszek.com.pl/';
+        window.location.href = 'https://mateusz-tomaszek.pl/';
     }
 }
 
