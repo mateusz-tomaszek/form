@@ -21,11 +21,7 @@
 }
 
 
-body
-{
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
+
 
 *, *:before, *:after {
     box-sizing: border-box;
@@ -34,8 +30,11 @@ body
   }
   
   body {
+    background-color: #3e3e3e !important;
     background: linear-gradient(to right, #ba1dea 0%, #eb466b 100%);
     font-size: 12px;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
   
   body, button, input {
