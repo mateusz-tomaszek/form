@@ -22,20 +22,33 @@
 
 
 
-
 *, *:before, *:after {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   
-  body {
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100dvh; /* Użycie 100dvh zamiast 100vh dla poprawnej obsługi mobilnej */
+    width: 100vw; /* Zapewnia pełną szerokość ekranu */
+    overflow: hidden; /* Zapobiega przewijaniu w pionie i poziomie */
+}
+
+body {
     background-color: #3e3e3e !important;
     background: linear-gradient(to right, #ba1dea 0%, #eb466b 100%);
+    background-size: cover; /* Upewnia się, że gradient pokrywa całą stronę */
+    background-attachment: fixed; /* Tło pozostaje stałe podczas przewijania */
+    background-position: center;
     font-size: 12px;
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
+    overflow: hidden; /* Dodatkowo zapobiega przewijaniu */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
   
   body, button, input {
     font-family: 'Montserrat', sans-serif;
